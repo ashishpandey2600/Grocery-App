@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:groceryapp/model/cart_model.dart';
 import 'package:provider/provider.dart';
@@ -56,6 +58,7 @@ class _CartPageState extends State<CartPage> {
                   padding: EdgeInsets.all(24),
                   child: Row(children: [
                    Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Total Price",
                       style: TextStyle(color: Colors.white),
@@ -64,7 +67,28 @@ class _CartPageState extends State<CartPage> {
                       Text('₹'+value.calculateTotal(),
                       style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
                     ],
-                   )
+                   ),
+                   //pay now button
+                      SizedBox(width: 100,),
+                   Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: Colors.green.shade100 )),
+                      padding: EdgeInsets.all(12),
+                    child: Row(children: [
+                     Text(
+                    "Pay Now",style: TextStyle(color: Colors.white),
+                   
+                   ),
+                   Icon(Icons.arrow_forward_ios,
+                   size: 16,
+                   color: Colors.white,
+                   ),
+                   
+                   ],)
+                   
+                  
+                   ),
 
                   ],),
                 ),
