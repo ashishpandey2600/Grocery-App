@@ -1,7 +1,7 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:groceryapp/model/cart_model.dart';
 import 'package:provider/provider.dart';
 
@@ -46,7 +46,7 @@ class _PageHomeState extends State<PageHome> {
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Text(
               "Let's order freash items for you",
-              style: GoogleFonts.notoSerif(
+              style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),

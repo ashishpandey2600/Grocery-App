@@ -5,9 +5,9 @@ class CartModel extends ChangeNotifier {
   final List _shopItems = [
     //[itemName, itemPrice, imagePath, color]
     ["1L Packing Mustard Oil", "100", "assets/a.jpg", Colors.green],
-    ["10L Packing Mustard Oil", "101", "assets/a.jpg", Colors.green],
-    ["1L Packing Mustard Oil", "110", "assets/a.jpg", Colors.green],
-    ["1L Packing Mustard Oil", "103", "assets/a.jpg", Colors.green],
+    ["10L Packing Mustard Oil", "101", "assets/a.jpg", Colors.orange],
+    ["1L Packing Mustard Oil", "110", "assets/a.jpg", Colors.yellow],
+    ["1L Packing Mustard Oil", "103", "assets/a.jpg", Colors.red],
   ];
 
   //list of cart items

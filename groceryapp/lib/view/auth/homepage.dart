@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 import 'pagehome.dart';
 
@@ -20,11 +20,11 @@ class _HomePageState extends State<HomePage> {
               left: 80.0, right: 80, bottom: 80, top: 160),
           child: Image.asset("assets/a.jpg"),
         ),
-        Text(
+      const  Text(
           "1L Package",
           textAlign: TextAlign.center,
           style:
-              GoogleFonts.notoSerif(fontSize: 36, fontWeight: FontWeight.bold),
+             TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
         ),
         const SizedBox(
           height: 24,
@@ -45,8 +45,8 @@ class _HomePageState extends State<HomePage> {
               color: Colors.deepOrange,
               borderRadius: BorderRadius.circular(20),
             ),
-            padding: EdgeInsets.all(24),
-            child: Text(
+            padding:const EdgeInsets.all(24),
+            child:const Text(
               "Get Started",
               style: TextStyle(color: Colors.white),
             ),
